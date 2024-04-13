@@ -1,18 +1,25 @@
 {
-  "name": "spacex-interactive-map",
-  "private": true,
+  "name": "@luisfalconmx/spacex-interactive-map",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host --port 3000",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.6",
+    "@tanstack/vue-query": "^5.29.0",
+    "@tanstack/vue-query-devtools": "^5.29.0",
+    "axios": "^1.6.8",
     "vue": "^3.4.21"
   },
   "devDependencies": {
+    "@types/googlemaps": "^3.43.3",
     "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vue-tsc": "^2.0.6"
