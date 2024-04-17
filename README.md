@@ -8,7 +8,7 @@
 <br />
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/luisfalconmx/gym-geolocations-map/main/.github/cover.jpg" alt="password generator app" width="100%" />
+  <img src="https://raw.githubusercontent.com/luisfalconmx/gym-geolocations-map/main/.github/cover.jpg" alt="gym-geolocations-map" width="100%" />
 </p>
 
 <br />
