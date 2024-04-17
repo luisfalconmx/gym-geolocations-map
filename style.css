@@ -1,0 +1,359 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  padding-bottom: 40px;
+}
+
+#app {
+  font-family: sans-serif;
+  max-width: 1400px;
+  margin: auto;
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+.hero {
+  background-color: #131306;
+  color: white;
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px 80px 0px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.hero__badge {
+  width: fit-content;
+  padding: 10px 20px;
+  display: block;
+  border: 1px solid #f0fb55;
+  color: #f0fb55;
+  border-radius: 20px;
+  font-size: 0.875rem;
+}
+
+.hero__title {
+  font-size: 2rem;
+  font-weight: black;
+  margin: 32px 0 16px;
+  display: block;
+}
+
+.hero__description {
+  font-size: 1.125rem;
+  color: #a4a4a4;
+  margin: 0 0 32px 0;
+  display: block;
+}
+
+.hero__button {
+  display: block;
+  width: fit-content;
+  background-color: #f0fb55;
+  text-decoration: none;
+  color: #030303;
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.hero__graphics {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero__image {
+  display: block;
+  margin: auto;
+}
+
+.mit--no-cursor {
+  cursor: default;
+}
+
+.mit-map-popup {
+  max-width: 220px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.mit-map-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.mit-map-address {
+  font-size: 14px;
+  margin: 0 0 15px 0;
+  padding: 0;
+  color: #616161;
+}
+
+.mit-map-link {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.mit__btn {
+  width: 100%;
+  padding: 26px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #f0fb55;
+  color: #000000;
+  border: 0;
+  cursor: pointer;
+}
+
+.mit__btn-text {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.mit__btn-text::first-letter {
+  text-transform: uppercase;
+}
+
+.mit__arrow-down {
+  width: 20px;
+  height: 20px;
+  color: #ccc;
+  display: block;
+  margin-left: 10px;
+}
+
+.mit__dropdown-choises {
+  padding-inline: 0;
+  padding: 20px 10%;
+  margin: 0;
+  background-color: #131306;
+  list-style: none;
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px 10px;
+  border-top: 1px solid #333;
+}
+
+.mit__dropdown--show {
+  display: grid;
+}
+
+.mit__region {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #a4a4a4;
+  cursor: pointer;
+}
+
+.mit__region::first-letter {
+  text-transform: uppercase;
+}
+
+.mit__place-list {
+  background-color: #131306;
+}
+
+.mit__places {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px 0;
+}
+
+.mit__place {
+  display: block;
+}
+
+.mit__place--hidden {
+  display: none;
+}
+
+.mit__place-title {
+  margin: 0;
+  padding: 20px 25px;
+  border-bottom: 1px solid #333;
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.mit__locations {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #131306;
+}
+
+.mit__location {
+  background-color: #131306;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  position: relative;
+  overflow: hidden;
+  min-height: 270px;
+}
+
+.mit__location:hover .mit__location-link .mit__location-slug {
+  color: #f0fb55;
+  transition: all ease 0.2s;
+}
+
+.mit__location-link {
+  display: block;
+  padding: 52px 20px 52px 20px;
+  color: #333;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.mit__location-slug {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 28px;
+  margin: auto;
+  width: min-content;
+  z-index: 1;
+  font-size: 120px;
+  font-weight: bolder;
+  color: #131306;
+  text-transform: uppercase;
+  opacity: 0.2;
+  transition: all ease 0.2s;
+}
+
+.mit__location-name {
+  position: relative;
+  z-index: 2;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.mit__location-address {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #a4a4a4;
+}
+
+.mit__location-instructions {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  color: #999;
+}
+
+.mit__location-button {
+  position: relative;
+  z-index: 2;
+  margin-top: 10px;
+  display: block;
+  width: fit-content;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  border-bottom: 1px solid #f0fb55;
+  color: #f0fb55;
+  padding: 0 0 3px 0;
+}
+
+@media (max-width: 1024px) {
+  .mit__dropdown-choises {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mit__locations {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 20px 30px 0;
+  }
+
+  .hero__content {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .hero__badge {
+    margin: auto;
+  }
+
+  .hero__title {
+    text-align: center;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero__button {
+    margin: auto;
+  }
+
+  .mit__dropdown-choises {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #map {
+    height: 500px;
+  }
+
+  .mit__dropdown-choises {
+    grid-template-columns: 1fr;
+  }
+
+  .mit__locations {
+    grid-template-columns: 1fr;
+  }
+
+  .mit__location-slug {
+    top: -20px;
+    font-size: 90px;
+  }
+}
