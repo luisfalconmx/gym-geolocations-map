@@ -14,7 +14,7 @@ var placesData = [
         instructions: "*Parking available on site",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/hamptons",
+          url: "#",
         },
         coordenates: {
           lat: 40.940855743594824,
@@ -28,7 +28,7 @@ var placesData = [
         instructions: "*In between West Broadway and Wooster",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/soho",
+          url: "#",
         },
         coordenates: {
           lat: 40.722362790754836,
@@ -58,7 +58,7 @@ var placesData = [
         instructions: "*Street & 1900 Bay Road garage parking",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/miamibeach",
+          url: "#",
         },
         coordenates: {
           lat: 25.79537581399364,
@@ -72,7 +72,7 @@ var placesData = [
         instructions: "*Complimentary parking lot",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/aventura",
+          url: "#",
         },
         coordenates: {
           lat: 25.94972374351693,
@@ -86,7 +86,7 @@ var placesData = [
         instructions: "*Street parking",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/coral-gables",
+          url: "#",
         },
         coordenates: {
           lat: 25.733037691503426,
@@ -100,7 +100,7 @@ var placesData = [
         instructions: "",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/midtown",
+          url: "#",
         },
         coordenates: {
           lat: 25.808499438453655,
@@ -114,7 +114,7 @@ var placesData = [
         instructions: "*Complimentary parking lot",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/somi",
+          url: "#",
         },
         coordenates: {
           lat: 25.6970276679542,
@@ -130,7 +130,7 @@ var placesData = [
           "* Public parking available across the street along Pan American Drive. *No bike parking inside studio or on condo premise.",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/coconut-grove",
+          url: "#",
         },
         coordenates: {
           lat: 25.730072711296383,
@@ -146,7 +146,7 @@ var placesData = [
           "*Take elevators to the left to floor M or take stairs inside lobby to floor M.",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/brickell",
+          url: "#",
         },
         coordenates: {
           lat: 25.76315320005587,
@@ -160,7 +160,7 @@ var placesData = [
         instructions: "",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/fort-lauderdale",
+          url: "#",
         },
       },
       {
@@ -171,7 +171,7 @@ var placesData = [
           "This is a new development and the address is not accurate yet on Google Maps. Please use Josephs Market West Palm on GPS. We are located on Dixie, in between Salons by JC and Restore Hyper Wellness.",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/west-palm",
+          url: "#",
         },
         coordenates: {
           lat: 26.68849141311584,
@@ -186,7 +186,7 @@ var placesData = [
           "When using GPS, the address will take you to the opposite side of the building. There is metered street parking or 4 free parking garages. We recommend parking in Garage B. The unit is located across from iPIC and adjacent to Prenuvo.",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/boca",
+          url: "#",
         },
         coordenates: {
           lat: 26.352789576991245,
@@ -200,7 +200,7 @@ var placesData = [
         instructions: "",
         link: {
           text: "VIEW DETAILS",
-          link: "https://www.makeittremble.com/doral-fl",
+          link: "#",
         },
         coordenates: {
           lat: 25.809355538997398,
@@ -225,7 +225,7 @@ var placesData = [
         instructions: "*Complimentary parking lot",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/reno-nv",
+          url: "#",
         },
         coordenates: {
           lat: 39.40620113540004,
@@ -239,7 +239,7 @@ var placesData = [
         instructions: "",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/studios/reno/caughlin-parkway",
+          url: "#",
         },
         coordenates: {
           lat: 39.482880390933246,
@@ -263,7 +263,7 @@ var placesData = [
         instructions: "",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/lafayette",
+          url: "#",
         },
         coordenates: {
           lat: 30.135265718075395,
@@ -287,7 +287,7 @@ var placesData = [
         instructions: "",
         link: {
           text: "VIEW DETAILS",
-          url: "https://www.makeittremble.com/south-carolina",
+          url: "#",
         },
         coordenates: {
           lat: 33.987966285944076,
@@ -519,6 +519,10 @@ function App() {
     <div class="mit__place-list">
       ${locationsTemplate}
     </div>
+
+    <footer>
+      Created by <a href="https://www.luisfalconmx.dev/" target="_blank">luisfalconmx</a>
+    </footer>
   `;
 
   app.innerHTML = template;
